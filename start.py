@@ -9,7 +9,7 @@ INIT_W = .8
 INIT_X = .3
 INIT_B = -.3
 TRAIN_VALUES = .0
-TRAIN_OPTIMAZER = 0.05
+TRAIN_OPTIMIZER = 0.05
 TRAIN_COUNT = 100
 
 # Model parameters
@@ -27,7 +27,7 @@ y_ = tf.constant(TRAIN_VALUES, name='correct_value')
 loss = tf.reduce_sum(tf.square(y - y_)) # sum of the squares
 
 # optimizer
-optimizer = tf.train.GradientDescentOptimizer(TRAIN_OPTIMAZER)
+optimizer = tf.train.GradientDescentOptimizer(TRAIN_OPTIMIZER)
 train = optimizer.minimize(loss)
 
 for value in [x, w, y, y_, loss]:
