@@ -7,7 +7,7 @@ cd ./
 ### install [link](https://www.tensorflow.org/install/install_mac#installing_with_virtualenv)
 ```
 chmod +x ./tgraph.sh
-...
+```
 
 ### start
 ```
