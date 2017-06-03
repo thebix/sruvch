@@ -1,8 +1,11 @@
 # tensorflow tests
 
 ## prepare env
+```
 cd ./
-### [install](https://www.tensorflow.org/install/install_mac#installing_with_virtualenv)
+```
+### install [link](https://www.tensorflow.org/install/install_mac#installing_with_virtualenv)
+```
 chmod +x ./tgraph.sh
 ...
 
