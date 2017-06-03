@@ -30,10 +30,9 @@ loss = tf.reduce_sum(tf.square(y - y_)) # sum of the squares
 optimizer = tf.train.GradientDescentOptimizer(TRAIN_OPTIMIZER)
 train = optimizer.minimize(loss)
 
+# log / graph
 for value in [x, w, y, y_, loss]:
      tf.summary.scalar(value.op.name, value)
-
-# log / graph
 summaries = tf.summary.merge_all()
 
 # start session & logger
