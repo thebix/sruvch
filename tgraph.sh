@@ -1,5 +1,5 @@
 #/bin/sh
 
 rm -f ./storage/stats/events.out.tfevents.*
-python ./start.py
+python ./guide4.py
 tensorboard --logdir=./storage/stats

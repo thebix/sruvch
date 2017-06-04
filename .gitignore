@@ -4,3 +4,4 @@
 /storage
 /.Python
 /pip-selfcheck.json
+*.pyc
